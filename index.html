@@ -15,53 +15,55 @@
         <a href="">Blog</a>
       </nav>
       <div>
-        <button>Start Now</button>
+        <button>Start now</button>
         <button>Login</button>
       </div>
     </header>
     <main>
       <form action="">
-      <fieldset>
-        <!-- Legend Title for Information -->
-        <legend>Personal Information</legend> 
-      <label for="username">Username:</label>
-      <input type="text" id="username" required/> <br>
-      <label for="email">Email:</label>
-      <input type="email" id="email" required/> <br>
-      <label for="password">password</label>
-      <input type="text"" required></button>
-      </fieldset>
-      <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
-      </form>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" required /><br />
 
-      <fieldset>
-        <legend>Experience Level</legend>
-        <input type="radio" id="beginner" name="experience" required>
-        <label for="beginner">Beginner</label>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required /><br />
 
-        <input type="radio" id="intermediate" name="experience" checked required>
-        <label for="intermediate">Intermediate</label>
+          <label for="password">Password:</label>
+          <input type="password" id="password" required /><br />
+        </fieldset>
 
-        <input type="radio" id="advanced" name="experience" required>
-        <label for="advanced">Advanced</label>
-      </fieldset>
+        <fieldset>
+          <legend>Experience Level</legend>
 
-      <fieldset>
-        <legend>Address</legend>
-        <div>
+          <input type="radio" id="beginner" name="experience" />
+          <label for="beginner">Beginner</label>
+
+          <input type="radio" id="intermediate" name="experience" checked />
+          <label for="intermediate">intermediate</label>
+
+          <input type="radio" id="advanced" name="experience" />
+          <label for="advanced">Advanced</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Address</legend>
+
+          <div>
             <label for="street">Street</label>
-            <input type="text" id="street" required>
-        </div>
+            <input type="text" id="street" />
+          </div>
 
-        <div>
+          <div>
             <label for="zip">Zipcode</label>
-            <input type="text" id="zip" required>
-        </div>
-        <div>
-            <label for="city">city</label>
-            <input type="text" id="city" required>
-        </div>
+            <input type="text" id="zip" />
+          </div>
+
+          <div>
+            <label for="city">City</label>
+            <input type="text" id="city" />
+          </div>
+
           <label for="region">Region</label>
           <select name="region" id="region" required>
             <option value="">--select region--</option>
@@ -70,43 +72,52 @@
             <option value="">East</option>
             <option value="">West</option>
           </select>
-      </fieldset>
-      <main>
-        <form action="">
-        </form>
+        </fieldset>
 
-        <table>
-          <caption>Calendar</caption>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
 
-          <thead>
-            <tr>
-              <th scope="row">Week#</th>
-               <th scope="row">Monday#</th>
-                <th scope="row">Tuesday</th>
-                 <th scope="row">Wednesday</th>
-                 <th scope="row">Thursday</th>
-            </tr>
-          </thead>
+      <table>
+        <caption>
+          Calendar
+        </caption>
 
-          <tbody>
-            <tr>
-              <th scope="row">Week1</th>
-              <td >Present</td>
-              <td>Absent</td>
-              <td>Present</td>
-              <td>Present</td>
-            </tr>
-            <tr>
-              <th scope="row">Week2</th>
-              <td>Present</td>
-              <td>Absent</td>
-              <td>Present</td>
-              <td>Present</td>
-            </tr>
-          </tbody>
-      
-        </table>
-      </main>
+        <thead>
+          <tr>
+            <th scope="col">Week#</th>
+            <th scope="col">Mon</th>
+            <th scope="col">Tues</th>
+            <th scope="col">Wed</th>
+            <th scope="col">Thur</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">Week 1</th>
+            <td>present</td>
+            <td>present</td>
+            <td>absent</td>
+            <td>present</td>
+          </tr>
+          <tr>
+            <th scope="row">Week 2</th>
+            <td>absent</td>
+            <td>present</td>
+            <td>absent</td>
+            <td>present</td>
+          </tr>
+          <tr>
+            <th scope="row">Week 3</th>
+            <td>present</td>
+            <td>present</td>
+            <td>present</td>
+            <td>present</td>
+          </tr>
+        </tbody>
+      </table>
+
     </main>
     <footer></footer>
   </body>
